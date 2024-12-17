@@ -52,6 +52,8 @@ _____________________________________
 
 ### Vite
 
+<details><summary>Click to expand..</summary>
+
 1. Create a theme provider
 - components/theme-provider.tsx
 ```typescript
@@ -191,5 +193,137 @@ export function ModeToggle() {
     </DropdownMenu>
   )
 }
-
 ```
+
+
+
+# Dark Mode Styling Guide
+<details><summary>Click to expand..</summary>
+
+## Grundlegende Farbklassen
+
+### Text & Hintergrund
+```css
+/* Basis Text und Hintergrund */
+bg-background dark:bg-background  /* Hintergrundfarbe */
+text-foreground dark:text-foreground  /* Textfarbe */
+
+/* Weiß/Schwarz Kontrast */
+text-black dark:text-white  /* Maximaler Kontrast */
+```
+
+### Karten & Container
+```css
+/* Karten-Styling */
+bg-card dark:bg-card/90  /* Kartenhintergrund mit leichter Transparenz im Dark Mode */
+text-card-foreground dark:text-card-foreground  /* Kartentext */
+
+/* Container-Styling */
+bg-muted dark:bg-muted  /* Gedämpfter Hintergrund */
+text-muted-foreground dark:text-muted-foreground  /* Gedämpfter Text */
+```
+
+### Interaktive Elemente
+```css
+/* Buttons */
+hover:bg-accent dark:hover:bg-muted  /* Hover-Effekt */
+active:bg-accent/90 dark:active:bg-muted/90  /* Aktiv-Zustand */
+
+/* Inputs */
+bg-background dark:bg-background  /* Input Hintergrund */
+text-foreground dark:text-foreground  /* Input Text */
+```
+
+## Komponenten-spezifische Styles
+
+### Kanban Board
+```css
+/* Hauptcontainer */
+.kanban-board {
+    @apply bg-background dark:bg-background text-foreground;
+}
+
+/* Spalten */
+.kanban-column {
+    @apply bg-card dark:bg-card/90 p-4 rounded-lg shadow-sm;
+}
+
+/* Spalten-Header */
+.kanban-header {
+    @apply bg-background dark:bg-card rounded p-2;
+}
+
+/* Karten */
+.kanban-card {
+    @apply bg-background dark:bg-muted rounded-lg shadow-sm;
+}
+```
+
+### Text-Hierarchie
+```css
+/* Überschriften */
+.heading {
+    @apply text-foreground dark:text-white font-bold;
+}
+
+/* Normaler Text */
+.text {
+    @apply text-foreground dark:text-foreground;
+}
+
+/* Sekundärer Text */
+.text-secondary {
+    @apply text-muted-foreground dark:text-muted-foreground;
+}
+```
+
+## Farbvariablen (aus index.css)
+
+### Light Mode
+```css
+:root {
+    --background: 0 0% 100%;      /* Weiß */
+    --foreground: 222.2 84% 4.9%; /* Fast Schwarz */
+    --card: 0 0% 100%;           /* Weiß */
+    --muted: 210 40% 96.1%;      /* Helles Grau */
+    --accent: 210 40% 96.1%;     /* Akzentfarbe */
+}
+```
+
+### Dark Mode
+```css
+.dark {
+    --background: 222.2 84% 4.9%; /* Fast Schwarz */
+    --foreground: 210 40% 98%;    /* Fast Weiß */
+    --card: 222.2 84% 4.9%;      /* Fast Schwarz */
+    --muted: 217.2 32.6% 17.5%;  /* Dunkles Grau */
+    --accent: 217.2 32.6% 17.5%; /* Akzentfarbe */
+}
+```
+
+## Best Practices
+
+1. **Immer Paare verwenden**: Jede Farb-Klasse sollte eine dark:-Variante haben
+   ```css
+   className="bg-white dark:bg-black"
+   ```
+
+2. **Kontrast beachten**: Im Dark Mode ausreichend Kontrast für Lesbarkeit sicherstellen
+   ```css
+   className="text-gray-800 dark:text-gray-100"
+   ```
+
+3. **Opacity nutzen**: Für subtile Unterschiede Opacity verwenden
+   ```css
+   className="bg-card/90 dark:bg-card/80"
+   ```
+
+4. **Hierarchie durch Farben**: Wichtige Elemente durch stärkeren Kontrast hervorheben
+   ```css
+   className="text-muted-foreground dark:text-white"
+   ```
+   
+</details>
+
+
+</details>
