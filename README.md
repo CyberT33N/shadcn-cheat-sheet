@@ -328,6 +328,12 @@ text-foreground dark:text-foreground  /* Input Text */
 
 
 
+</details>
+
+   
+</details>
+
+
 
 
 
@@ -642,32 +648,6 @@ _____________________________________
 
 
 
-
-
-</details>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-</details>
 
 
 </details>
