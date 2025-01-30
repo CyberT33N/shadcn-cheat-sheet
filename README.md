@@ -632,8 +632,8 @@ _____________________________________
 | **electron-shadcn** | Electron-App-Template mit shadcn/ui und weiteren Tools. | [electron-shadcn](https://github.com/LuanRoger/electron-shadcn) |
 | **horizon-ai-nextjs-shadcn-boilerplate** | Premium AI-Template mit Next.js, shadcn/ui, Stripe, Supabase und OAuth. | [horizon-ai-nextjs-shadcn-boilerplate](https://horizon-ui.com/boilerplate-shadcn) |
 | **kirimase** | Boilerplate für Projekte mit shadcn/ui, Tailwind CSS und Next.js. | [kirimase](https://kirimase.dev/) |
-| **magicui-startup-templates** **HOT** | Startup-Template mit shadcn/ui, TailwindCSS und framer-motion. | [magicui-startup-templates](https://magicui.design/docs/templates/startup) |
-| **next-shadcn-dashboard-starter** | Admin-Dashboard-Template mit Next.js 14 und shadcn/ui. | [next-shadcn-dashboard-starter](https://github.com/Kiranism/next-shadcn-dashboard-starter) |
+| **magicui-startup-templates** -  **HOT** | Startup-Template mit shadcn/ui, TailwindCSS und framer-motion. | [magicui-startup-templates](https://magicui.design/docs/templates/startup) |
+| **next-shadcn-dashboard-starter**  -  **HOT** | Admin-Dashboard-Template mit Next.js 14 und shadcn/ui. | [next-shadcn-dashboard-starter](https://github.com/Kiranism/next-shadcn-dashboard-starter) |
 | **nextjs-mdx-blog** | Blog-Template mit Contentlayer, MDX, shadcn/ui und Tailwind CSS. | [nextjs-mdx-blog](https://github.com/ChangoMan/nextjs-mdx-blog) |
 | **shadcn-landing-page** | Landing-Page-Template mit shadcn/ui, React, TypeScript und Tailwind CSS. | [shadcn-landing-page](https://github.com/leoMirandaa/shadcn-landing-page) |
 | **shadcn-nextjs-free-boilerplate** | Kostenloses Next.js-Template mit ChatGPT-API-Dashboard. | [shadcn-nextjs-free-boilerplate](https://github.com/horizon-ui/shadcn-nextjs-boilerplate) |
