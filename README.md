@@ -639,7 +639,7 @@ _____________________________________
 | **shadcn-nextjs-free-boilerplate** | Kostenloses Next.js-Template mit ChatGPT-API-Dashboard. | [shadcn-nextjs-free-boilerplate](https://github.com/horizon-ui/shadcn-nextjs-boilerplate) |
 | **shadcn-vue-landing-page** | Landing-Page-Template mit Vue, shadcn-vue, TypeScript und Tailwind CSS. | [shadcn-vue-landing-page](https://github.com/leoMirandaa/shadcn-vue-landing-page) |
 | **t3-app-template** | Admin-Template für T3 Stack und shadcn/ui. | [t3-app-template](https://github.com/gaofubin/t3-app-template) |
-| **taxonomy** | Open-Source-Anwendung mit Next.js-Features wie Server-Komponenten und neuem Router. | [taxonomy](https://github.com/shadcn/taxonomy) |
+| **taxonomy** - **HOT** | Open-Source-Anwendung mit Next.js-Features wie Server-Komponenten und neuem Router. | [taxonomy](https://github.com/shadcn/taxonomy) |
 | **turborepo-shadcn-ui-tailwindcss** | Turborepo-Starter mit shadcn/ui und TailwindCSS für Shared UI-Komponenten. | [turborepo-shadcn-ui-tailwindcss](https://github.com/henriqpohl/turborepo-shadcn-ui-tailwindcss) |
 | **turborepo-launchpad** | Monorepo-Boilerplate für shadcn-Projekte mit Turbo und Shared Components. | [turborepo-launchpad](https://github.com/JadRizk/turborepo-launchpad) |
 | **Supabase authentication starter template** | Template für Supabase-Authentifizierung mit Next.js, TypeScript und shadcn/ui. | [Supabase authentication starter template](https://github.com/Sahil-Sharma-23/supa-next-shad-auth) |  
