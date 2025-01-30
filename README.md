@@ -626,7 +626,7 @@ _____________________________________
 
 | Name | Beschreibung | Link |
 |------|--------------|------|
-| **chadnext** | Starter-Template mit Next.js 14, shadcn/ui, LuciaAuth, Prisma, Stripe, Internationalisierung und mehr. | [chadnext](https://github.com/moinulmoin/chadnext) |
+| **chadnext** - **HOT** | Starter-Template mit Next.js 14, shadcn/ui, LuciaAuth, Prisma, Stripe, Internationalisierung und mehr. | [chadnext](https://github.com/moinulmoin/chadnext) |
 | **cloudflare-saas-stack** | Batteries-included Starterkit für SaaS-Produkte auf Cloudflare. | [cloudflare-saas-stack](https://github.com/Dhravya/cloudflare-saas-stack) |
 | **design-system-template** | Template mit Turborepo, TailwindCSS, Storybook und shadcn/ui. | [design-system-template](https://github.com/arevalolance/design-system-template) |
 | **electron-shadcn** | Electron-App-Template mit shadcn/ui und weiteren Tools. | [electron-shadcn](https://github.com/LuanRoger/electron-shadcn) |
