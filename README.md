@@ -167,6 +167,8 @@ _____________________________________
 - The components.json file holds configuration for your project.
 
 
+<details><summary>Click to expand..</summary>
+
 ## Overview
 The `components.json` file holds configuration for your project. It is used to understand your project's setup and to generate components customized for it.
 
@@ -319,6 +321,32 @@ Alias for hooks (e.g., `use-media-query`, `use-toast`).
   }
 }
 ```
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
