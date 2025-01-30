@@ -8,6 +8,145 @@
 ## Vite
 - https://ui.shadcn.com/docs/installation/vite
 
+<details><summary>Click to expand..</summary>
+
+Start by creating a new React project using Vite:
+```sh
+npm create vite@latest
+```
+
+### **Add Tailwind and Configure**
+Install Tailwind CSS and its peer dependencies:
+```sh
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+Add this import header in your main CSS file (`src/index.css`):
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+Configure the Tailwind template paths in `tailwind.config.js`:
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+## **TypeScript Configuration**
+
+### **Edit `tsconfig.json`**
+Modify `tsconfig.json` to add `baseUrl` and `paths`:
+```json
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
+```
+
+### **Edit `tsconfig.app.json`**
+Modify `tsconfig.app.json` for IDE path resolution:
+```json
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
+```
+
+## **Vite Configuration**
+
+### **Update `vite.config.ts`**
+Ensure proper path resolution:
+```sh
+npm install -D @types/node
+```
+
+Modify `vite.config.ts`:
+```ts
+import path from "path"
+import react from "@vitejs/plugin-react"
+import { defineConfig } from "vite"
+ 
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+})
+```
+
+## **ShadCN UI Setup**
+
+### **Run CLI to Initialize ShadCN-UI**
+```sh
+npx shadcn@latest init
+```
+
+### **Configure `components.json`**
+You will be asked the following:
+- **Which style?** → New York
+- **Base color?** → Zinc
+- **Use CSS variables for colors?** → Yes/No
+
+### **Add Components**
+Add a UI component, e.g., Button:
+```sh
+npx shadcn@latest add button
+```
+
+Import and use the Button component:
+```tsx
+import { Button } from "@/components/ui/button"
+ 
+export default function Home() {
+  return (
+    <div>
+      <Button>Click me</Button>
+    </div>
+  )
+}
+```
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
