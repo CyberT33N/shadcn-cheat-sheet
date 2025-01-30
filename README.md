@@ -167,6 +167,158 @@ _____________________________________
 - The components.json file holds configuration for your project.
 
 
+## Overview
+The `components.json` file holds configuration for your project. It is used to understand your project's setup and to generate components customized for it.
+
+**Note:** This file is optional and only required if you're using the CLI to add components. If using the copy-paste method, it's not needed.
+
+### Create a `components.json` file
+Run the following command:
+```sh
+npx shadcn@latest init
+```
+See the CLI section for more information.
+
+## Schema
+You can see the JSON Schema for `components.json` here:
+```json
+{
+  "$schema": "https://ui.shadcn.com/schema.json"
+}
+```
+
+## Configuration Options
+
+### `style`
+Defines the style for your components. This **cannot be changed** after initialization.
+```json
+{
+  "style": "default" | "new-york"
+}
+```
+
+### `tailwind`
+Configuration to help the CLI understand how Tailwind CSS is set up.
+
+#### `tailwind.config`
+Path to `tailwind.config.js` or `tailwind.config.ts`.
+```json
+{
+  "tailwind": {
+    "config": "tailwind.config.js" | "tailwind.config.ts"
+  }
+}
+```
+
+#### `tailwind.css`
+Path to the CSS file that imports Tailwind CSS.
+```json
+{
+  "tailwind": {
+    "css": "styles/global.css"
+  }
+}
+```
+
+#### `tailwind.baseColor`
+Sets the default color palette for components. **Cannot be changed after initialization.**
+```json
+{
+  "tailwind": {
+    "baseColor": "gray" | "neutral" | "slate" | "stone" | "zinc"
+  }
+}
+```
+
+#### `tailwind.cssVariables`
+Choose between CSS variables or Tailwind utility classes for theming.
+```json
+{
+  "tailwind": {
+    "cssVariables": true | false
+  }
+}
+```
+**Note:** This setting cannot be changed after initialization.
+
+#### `tailwind.prefix`
+Prefix for Tailwind CSS utility classes.
+```json
+{
+  "tailwind": {
+    "prefix": "tw-"
+  }
+}
+```
+
+### `rsc`
+Enable support for React Server Components.
+```json
+{
+  "rsc": true | false
+}
+```
+
+### `tsx`
+Choose between TypeScript (`.tsx`) or JavaScript (`.jsx`) components.
+```json
+{
+  "tsx": true | false
+}
+```
+
+### `aliases`
+Defines import aliases for utilities, components, and libraries.
+
+#### `aliases.utils`
+Alias for utility functions.
+```json
+{
+  "aliases": {
+    "utils": "@/lib/utils"
+  }
+}
+```
+
+#### `aliases.components`
+Alias for components.
+```json
+{
+  "aliases": {
+    "components": "@/components"
+  }
+}
+```
+
+#### `aliases.ui`
+Alias for UI components. Determines where UI components are placed.
+```json
+{
+  "aliases": {
+    "ui": "@/app/ui"
+  }
+}
+```
+
+#### `aliases.lib`
+Alias for library functions (e.g., `format-date`, `generate-id`).
+```json
+{
+  "aliases": {
+    "lib": "@/lib"
+  }
+}
+```
+
+#### `aliases.hooks`
+Alias for hooks (e.g., `use-media-query`, `use-toast`).
+```json
+{
+  "aliases": {
+    "hooks": "@/hooks"
+  }
+}
+```
 
 
 
